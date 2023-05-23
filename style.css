@@ -1,0 +1,111 @@
+*, ::before, ::after { 
+  margin: O;
+  padding: O;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+} 
+
+body { 
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(rgb(213, 176, 43), rgb(101, 79, 1));
+}
+
+.container { 
+  box-shadow: -2px -2px -2px -2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-bloc{
+  background: linear-gradient(to right,rgb(234, 234, 234) 50%,rgb(255, 255, 255) 50%);
+}
+
+.container-bloc-one, .container-bloc-two, .container-bloc-three {
+  padding: 5vw;
+}
+
+.picto {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 5px;
+}
+
+.player{
+  position: relative;
+}
+
+.player-turn-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 85, 85);
+  transform: translateY(-50%);
+}
+
+.de {
+  max-width: 100px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.155);
+  border-radius: 10px;
+}
+
+.score-live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 85, 85);
+  border-radius: 5px;
+  
+}
+
+.score-chiffre {
+  color: rgb(255, 255, 255);
+}
+
+.score-total {
+  color: rgb(255, 85, 85);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.close:hover, .close:focus {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
